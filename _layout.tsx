@@ -1,5 +1,6 @@
 import React from 'react';
 import {Text, View, TextInput, Pressable, StyleSheet, SafeAreaView} from 'react-native';
+import { Link } from '@react-navigation/native';
 
 const Login = () => {
   const [text, onChangeText] = React.useState('')
@@ -15,8 +16,12 @@ const Login = () => {
           <Pressable style={styles.button}>
             <Text style={styles.label_button}>Sign-in</Text>
           </Pressable> 
-          <Text style={styles.links}>Sign Up</Text>
-          <Text style={styles.links}>Forgot Password</Text>
+          <Link to={{ screen: '#'}}>
+            <Text style={styles.links}>Sign Up</Text>
+          </Link>
+          <Link to={{ screen: '#'}}>
+            <Text style={styles.links}>Forgot Password</Text>
+          </Link>
       </View>
     </SafeAreaView>
   );
