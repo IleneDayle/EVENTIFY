@@ -1,2 +1,0 @@
-# EVENTIFY
-Event Management Application
